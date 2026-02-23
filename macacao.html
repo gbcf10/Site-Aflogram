@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Macacões | Afroglam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">AFROGLAM</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Voltar</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botão do Carrinho -->
+    <button id="btn-carrinho" class="icon" style="font-size: 1.2rem; background: none; border: none; cursor: pointer; position: relative;">
+      🛒
+    </button>
+  </header>
+
+  <section class="produto-detalhado">
+    <h2>Macacões Afroglam</h2>
+
+    <div class="galeria-produto">
+      <div class="item-produto">
+        <img src="imagens/macacao-preto.png" alt="Macacão preto" class="zoomavel" data-id="1" />
+        <p class="preco">R$ 129,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho1" value="P"> P</label>
+          <label><input type="radio" name="tamanho1" value="M"> M</label>
+          <label><input type="radio" name="tamanho1" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Macacão preto" data-preco="129.90" data-id="1">Adicionar ao Carrinho</button>    
+      </div>
+
+      <div class="item-produto">
+        <img src="imagens/macaqunho-preto-costas.PNG" alt="Macacão preto costas" class="zoomavel" data-id="2" />
+        <p class="preco">R$ 119,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho2" value="P"> P</label>
+          <label><input type="radio" name="tamanho2" value="M"> M</label>
+          <label><input type="radio" name="tamanho2" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Macacão preto costas" data-preco="119.90" data-id="2">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="item-produto">
+        <img src="imagens/macaquinho-preto-lado.PNG" alt="Macacão preto lado" class="zoomavel" data-id="3" />
+        <p class="preco">R$ 119,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho3" value="P"> P</label>
+          <label><input type="radio" name="tamanho3" value="M"> M</label>
+          <label><input type="radio" name="tamanho3" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Macacão preto lado" data-preco="119.90" data-id="3">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="item-produto">
+        <img src="imagens/macacao-marrom-frente.png" alt="Macacão marrom frente" class="zoomavel" data-id="4" />
+        <p class="preco">R$ 139,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho4" value="P"> P</label>
+          <label><input type="radio" name="tamanho4" value="M"> M</label>
+          <label><input type="radio" name="tamanho4" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Macacão marrom frente" data-preco="139.90" data-id="4">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="item-produto">
+        <img src="imagens/macacao-marrom-lado.jpeg" alt="Macacão marrom lado" class="zoomavel" data-id="5" />
+        <p class="preco">R$ 139,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho5" value="P"> P</label>
+          <label><input type="radio" name="tamanho5" value="M"> M</label>
+          <label><input type="radio" name="tamanho5" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Macacão marrom lado" data-preco="139.90" data-id="5">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="item-produto">
+        <img src="imagens/macacao-marrom.jpeg" alt="Macacão marrom" class="zoomavel" data-id="6" />
+        <p class="preco">R$ 139,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho6" value="P"> P</label>
+          <label><input type="radio" name="tamanho6" value="M"> M</label>
+          <label><input type="radio" name="tamanho6" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Macacão marrom" data-preco="139.90" data-id="6">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <p>Macacões versáteis e elegantes para seu treino ou dia a dia. Conforto e estilo em uma só peça.</p>
+  </section>
+
+  <!-- Modal do Carrinho -->
+  <div id="modal-carrinho" class="modal-carrinho">
+    <div class="conteudo-carrinho">
+      <h2>🛒 Seu Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <p id="total-carrinho">Total: R$ 0,00</p>
+      <button id="fechar-carrinho">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

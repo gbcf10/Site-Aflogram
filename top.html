@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tops | Afroglam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">AFROGLAM</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Voltar</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botão do Carrinho -->
+    <button id="btn-carrinho" class="icon" style="font-size: 1.2rem; background: none; border: none; cursor: pointer; position: relative;">
+      🛒
+    </button>
+  </header>
+
+  <section class="produto-detalhado">
+    <h2>Tops Afroglam</h2>
+
+    <div class="galeria-produto">
+      <div class="item-produto">
+        <img src="imagens/top1.webp" alt="Top Principal" class="zoomavel" data-id="1" />
+        <p class="preco">R$ 79,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho1" value="P"> P</label>
+          <label><input type="radio" name="tamanho1" value="M"> M</label>
+          <label><input type="radio" name="tamanho1" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Top Principal" data-preco="79.90" data-id="1">Adicionar ao Carrinho</button>    
+      </div>
+
+      <div class="item-produto">
+        <img src="imagens/top1.webp" alt="Top Principal" class="zoomavel" data-id="2" />
+        <p class="preco">R$ 79,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho2" value="P"> P</label>
+          <label><input type="radio" name="tamanho2" value="M"> M</label>
+          <label><input type="radio" name="tamanho2" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Top Principal" data-preco="79.90" data-id="2">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="item-produto">
+        <img src="imagens/tops.webp" alt="Top 1" class="zoomavel" data-id="3" />
+        <p class="preco">R$ 89,90</p>
+        <div class="tamanhos">
+          <label><input type="radio" name="tamanho3" value="P"> P</label>
+          <label><input type="radio" name="tamanho3" value="M"> M</label>
+          <label><input type="radio" name="tamanho3" value="G"> G</label>
+        </div>
+        <input type="number" class="quantidade" min="1" value="1">
+        <button class="btn-carrinho" data-nome="Top 1" data-preco="89.90" data-id="3">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <p>Descrição completa do produto, tamanhos disponíveis, tecido, e outras informações importantes.</p>
+  </section>
+
+  <!-- Modal do Carrinho -->
+  <div id="modal-carrinho" class="modal-carrinho">
+    <div class="conteudo-carrinho">
+      <h2>🛒 Seu Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <p id="total-carrinho">Total: R$ 0,00</p>
+      <button id="fechar-carrinho">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
