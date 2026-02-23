@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriel Ferraz – Portfólio</title>
+  <meta name="description" content="Portfólio de projetos de Gabriel Ferraz: Afroglam, WL Multimarcas e Automação RMD com Python (pandas, openpyxl)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0b0b0f; --panel:#121219; --muted:#a3a3b2; --text:#f5f7ff; --brand:#7c5cff; --accent:#36e2a0; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Montserrat,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:radial-gradient(1200px 800px at 100% -20%, #171726, transparent), linear-gradient(180deg,#0b0b0f,#0b0b0f 60%,#0f0f16); color:var(--text)}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,11,15,.7);backdrop-filter:blur(8px);border-bottom:1px solid #1f1f2e;z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--brand),#2a2a5a);display:grid;place-items:center;font-weight:800}
+    .logo span{color:#fff}
+    .brand h1{font-size:1.1rem;margin:0}
+    .tag{font-size:.8rem;color:var(--muted)}
+    .links{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border:1px solid #2a2a3a;border-radius:10px;background:#121219;color:#fff}
+    .btn:hover{border-color:#3b3b5a}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:32px 0}
+    .hero .card{background:linear-gradient(180deg,#131322,#0f0f18);border:1px solid #1e1e2e;border-radius:18px;padding:22px}
+    h2{font-size:2rem;margin:12px 0 6px}
+    p{line-height:1.7;color:#d9daee}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid #2a2a3a;color:#d0d1e8;font-size:.85rem}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg,#12121b,#0f0f16);border:1px solid #1e1e2a;border-radius:18px;padding:18px}
+    .card h3{margin:6px 0 8px}
+    .meta{font-size:.85rem;color:var(--muted)}
+    .thumb{height:160px;border-radius:12px;background:#181828;border:1px dashed #2a2a3a;display:grid;place-items:center;color:#7f80a6;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;opacity:.95;transition:transform .3s ease}
+    .thumb:hover img{transform:scale(1.04)}
+    .card .actions{display:flex;gap:10px;margin-top:12px}
+    .btn.ghost{background:transparent}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin:10px 0 14px}
+    footer{margin:32px 0 12px;color:var(--muted);font-size:.9rem}
+    .contact{display:grid;gap:8px}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+    .kpi{padding:14px;border-radius:14px;background:#101018;border:1px solid #202030}
+    .kpi b{font-size:1.15rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo"><span>GF</span></div>
+        <div>
+          <h1>Gabriel Ferraz</h1>
+          <div class="tag">Front-end • Automação com Python • Dados</div>
+        </div>
+      </div>
+      <div class="links">
+        <a class="btn" href="#projetos">Projetos</a>
+        <a class="btn" href="#skills">Habilidades</a>
+        <a class="btn" href="#contato">Contato</a>
+        <a class="btn" href="#sobre">Sobre</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="sobre">
+      <div class="card">
+        <h2>Desenvolvedor em evolução contínua</h2>
+        <p>Sou o Gabriel, do Rio de Janeiro (Itaboraí). Atuo em <b>Front-end e estou me aperfçoando também em Back end</b> (HTML/CSS/JS, Vue/Nuxt, Tailwind) e <b>Automação com Python</b> (pandas, openpyxl) aplicada a rotinas operacionais (RMD, consumo, estoque). Busco oportunidades para contribuir com produtos reais, código limpo e foco em UX, performance e SEO técnico.</p>
+        <div class="chips">
+          <span class="chip">Vue/Nuxt</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Golang</span>
+          <span class="chip">TypeScript (noções)</span>
+          <span class="chip">Python • pandas • openpyxl</span>
+          <span class="chip">Git/GitHub</span>
+          <span class="chip">Firebase (auth básico)</span>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><b>3+</b><br/>Projetos destaque</div>
+          <div class="kpi"><b>UX & SEO</b><br/>Foco em performance</div>
+          <div class="kpi"><b>Automação</b><br/>Planilhas operacionais</div>
+        </div>
+      </div>
+      <div class="card contact" id="contato">
+        <h3>Contato & Links</h3>
+        <div>📧 <a href="mailto:gabrielferraz306@gmail.com">gabrielferraz306@gmail.com</a></div>
+        <div>📱 <a href="tel:+5521967444745">+55 (21) 96744-745</a></div>
+        <a href="https://wa.me/5521967449745?text=Ol%C3%A1%20Gabriel,%20vim%20do%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+   target="_blank"
+   class="btn-whatsapp">
+   💬 Falar no WhatsApp
+</a>
+        <div>💼 <a href="https://www.linkedin.com/in/gabrielcarvalhoferraz" target="_blank" rel="noreferrer">LinkedIn</a></div>
+        <div>🐙 <a href="https://github.com/gbcf10" target="_blank" rel="noreferrer">GitHub</a></div>
+        <div class="meta">RJ • Brasil</div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects">
+      <div class="section-title"><h2>Projetos</h2></div>
+      <div class="grid">
+        <!-- Afroglam -->
+        <article class="card">
+          <div class="thumb main"><img src="imagens/siteaflogram 2.jfif" alt="Afroglam - home"></div>
+          <div class="thumb main"><img src="imagens/siteaflogram.jfif" alt="Afroglam - produto"></div>
+          <h3>Afroglam — E-commerce Fitness (dark)</h3>
+          <p>Loja com animações de título, grid responsivo, filtro por marcas, tamanhos (P/M), galeria em modal e foco em conversão. Código organizado (HTML/CSS/JS) e pronto para evoluir para Vue/Nuxt.</p>
+          <div class="actions">
+            <a class="btn" href="https://gabrielferraz.github.io/afroglam" target="_blank">Ver online</a>
+            <a class="btn ghost" href="https://github.com/GabrielFerraz/afroglam" target="_blank">Repositório</a>
+          </div>
+        </article>
+
+        <!-- WL Multimarcas -->
+        <article class="card">
+          <div class="thumb main"><img src="imagens/sitewl.jfif" alt="WL Multimarcas - home"></div>
+          <div class="thumb main"><img src="imagens/sitewl3.jfif" alt="WL Multimarcas - produto"></div>
+          <h3>WL Multimarcas — Loja Masculina</h3>
+          <p>Layout dark, páginas por marca (Lacoste, Nike, etc.), busca global via JSON e carrinho com localStorage.</p>
+          <div class="actions">
+            <a class="btn" href="https://www.wlstoremultimarcas.com.br" target="_blank">Ver online</a>
+            <a class="btn ghost" href="https://github.com/gbcf10/SITE-WL-MULTIMARCAS-" target="_blank">Repositório</a>
+          </div>
+        </article>
+
+        <!-- Automação RMD -->
+        <article class="card">
+          <div class="thumb main" style="height:260px;overflow:hidden;border-radius:12px;">
+            <video controls autoplay muted loop width="100%" height="100%">
+              <source src="imagens/automacao.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+          </div>
+          <h3>Automação RMD — Python (pandas + openpyxl)</h3>
+          <p>Exemplo em vídeo da automação de planilhas com Python. O script preenche e consolida dados operacionais (leituras, consumo e estoque) automaticamente com formatação e exportação.</p>
+          <div class="meta">Stack: Python, pandas, openpyxl • ETL leve • Excel</div>
+          <div class="actions">
+            <a class="btn ghost" href="https://github.com/GabrielFerraz/rmd-automacao" target="_blank">Repositório</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" style="margin-top:24px">
+      <div class="section-title"><h2>Habilidades Técnicas</h2></div>
+      <div class="grid">
+        <div class="card"><h3>Front-end</h3><p>HTML5, CSS3, JavaScript (ES6+), responsividade, acessibilidade e SEO técnico.</p></div>
+        <div class="card"><h3>Frameworks</h3><p>Vue.js/Nuxt, Tailwind e boas práticas de componentes.</p></div>
+        <div class="card"><h3>Automação/Dados</h3><p>Python, pandas, openpyxl e integração com rotinas operacionais via Excel/CSV.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Gabriel Ferraz • Portfólio
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
